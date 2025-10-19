@@ -36,7 +36,7 @@ Copiar código
 - `equipe.jpg` → Foto da equipe;  
 - `projeto1.jpg` / `projeto2.jpg` → Imagens dos projetos sociais;  
 - `voluntariado.jpg` → Banner ou seção de voluntariado;  
-- Ícones de redes sociais (`facebook.svg`, `instagram.svg`, `linkedin.svg`).
+- Ícones de redes sociais (`instagram.jpg`, `whatsapp.jpg`).
 
 ## ⚙️ Tecnologias
 - **HTML5** (estrutura semântica completa)  
@@ -48,11 +48,11 @@ Copiar código
 - Validação nativa com HTML5  
 - Máscaras aplicadas em CPF, telefone e CEP
 
-## 🔗 Link do Projeto
-> Inserir aqui o link público do GitHub Pages ou do repositório:  
-> `https://github.com/seuusuario/meu_projeto_ong`
+## 🔗 Link do Projeto  
+> `https://github.com/leonardo-felix-31/front-end-ong`
 
 ## ✅ Observações
 - Todos os arquivos HTML foram validados no W3C Validator;  
 - Estrutura de pastas organizada e arquivos otimizados;  
 - Projeto pronto para uso acadêmico ou demonstração de front-end profissional.
+

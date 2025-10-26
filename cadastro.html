@@ -5,27 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Formulário de cadastro para voluntários da ONG Esperança Viva.">
   <title>ONG Esperança Viva | Cadastro de Voluntário</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/logo.png">
   <script defer src="assets/js/masks.js"></script>
   <script defer src="assets/js/formValidation.js"></script>
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="Logotipo da ONG Esperança Viva" width="120">
-      <h1>ONG Esperança Viva</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <div class="header-top flex">
+        <img src="assets/img/logo.png" alt="Logotipo da ONG Esperança Viva" class="logo">
+        <h1>ONG Esperança Viva</h1>
+
+        <!-- Barra de pesquisa -->
+        <form class="search-form" action="#" method="get">
+          <input type="text" name="q" placeholder="Pesquisar..." aria-label="Pesquisar">
+          <button type="submit">🔍</button>
+        </form>
+      </div>
+
+      <nav>
+        <ul class="flex--nav">
+          <li><a class="navegadores" href="index.html">Início</a></li>
+          <li><a class="navegadores" href="projetos.html">Projetos</a></li>
+          <li><a class="navegadores" href="cadastro.html" aria-current="page">Cadastro</a></li>
+        </ul>
+
+        <!-- Botão hamburguer para mobile -->
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      </nav>
+    </header>
 
   <main>
     <section id="cadastro">
@@ -82,8 +91,67 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 ONG Esperança Viva. Todos os direitos reservados.</p>
-  </footer>
+    <footer class="footer">
+      <div class="footer-wrapper">
+
+        <!-- LOGO E COPYRIGHT -->
+        <div class="footer-main">
+          <img src="assets/img/logo.png" alt="Logotipo da ONG Esperança Viva" class="logo" width="180">
+          <p class="copyright">
+            © 2025 ONG Esperança Viva — Todos os direitos reservados.
+          </p>
+
+          <!-- REDES SOCIAIS -->
+          <ul class="social-media">
+            <li>Redes sociais:</li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <img src="assets/img/icones/instagram.png" alt="Instagram" width="20">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <img src="assets/img/icones/facebook.png" alt="Facebook" width="20">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <img src="assets/img/icones/whatsapp.png" alt="WhatsApp" width="20">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MAPA DO SITE -->
+        <div class="footer-sitemap">
+          <ul>
+            <li><strong>Institucional</strong></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="#">Transparência</a></li>
+          </ul>
+
+          <ul>
+            <li><strong>Sobre nós</strong></li>
+            <li><a href="#sobre-nos">Nossa missão</a></li>
+            <li><a href="#valores">Valores</a></li>
+            <li><a href="#historia">História</a></li>
+          </ul>
+
+          <ul>
+            <li><strong>Contato</strong></li>
+            <li><a href="#contato">Fale conosco</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <!-- CHAMADA PARA AÇÃO -->
+        <div class="footer-button">
+          <a href="cadastro.html" class="link-button">Seja voluntário</a>
+        </div>
+
+      </div>
+    </footer>
 </body>
 </html>

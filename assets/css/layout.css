@@ -1,0 +1,294 @@
+/* ==============================
+   ===== GLOBAL / BODY =====
+   ============================== */
+body {
+  font-family: var(--font-family-primary);
+  margin: 0;
+  background: var(--color-neutral-200);
+  color: var(--color-neutral-900);
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header | main | footer */
+  min-height: 100vh;
+}
+
+/* ==============================
+   ===== HEADER =====
+   ============================== */
+header {
+  background-color: var(--color-primary-dark);
+  color: var(--color-neutral-100);
+  padding: 15px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 10;
+}
+
+/* Header flex container */
+header .flex {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Logo */
+header .logo {
+  width: var(--space-7);
+  height: auto;
+}
+
+/* Header title */
+header h1 {
+  font-size: var(--font-size-xl);
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+/* ==============================
+   ===== BARRA DE PESQUISA =====
+   ============================== */
+header .search-form {
+  margin-left: auto; /* empurra para direita */
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+/* Input da barra de pesquisa */
+header .search-form input[type="text"] {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+/* Botão da barra de pesquisa */
+header .search-form button {
+  background-color: var(--color-secondary);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  transition: background 0.3s;
+}
+
+header .search-form button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+/* ==============================
+   ===== BOTÃO HAMBURGUER MOBILE =====
+   ============================== */
+.menu-toggle {
+  display: none; /* escondido por padrão */
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--color-neutral-100);
+  cursor: pointer;
+}
+
+/* ==============================
+   ===== RESPONSIVO HEADER / NAV =====
+   ============================== */
+@media (max-width: 900px) {
+  /* Header flex vertical */
+  header .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Barra de pesquisa ocupa largura total */
+  header .search-form {
+    width: 100%;
+    margin-top: var(--space-2);
+  }
+
+
+
+  /* Exibe botão hamburger */
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ==============================
+   ===== SEÇÕES =====
+   ============================== */
+section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 var(--space-3);
+}
+
+/* Títulos das seções */
+section h2 {
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-5);
+  position: relative;
+}
+
+/* Linha decorativa abaixo do título */
+section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-secondary);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Bloco de texto */
+.text-block {
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+/* ==============================
+   ===== MISSÃO, VISÃO, VALORES =====
+   ============================== */
+#valores article {
+  background-color: var(--color-neutral-100);
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#valores article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Título interno dos artigos */
+#valores h3 {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  margin-bottom: var(--space-2);
+  text-align: center;
+}
+
+/* Lista de valores */
+#valores ul.text-block {
+  list-style-type: disc;
+  padding-left: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+#valores ul.text-block li {
+  margin-bottom: 8px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ==============================
+   ===== HISTÓRIA =====
+   ============================== */
+#historia img.spc_img {
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* ==============================
+   ===== RESPONSIVIDADE SEÇÕES =====
+   ============================== */
+@media (max-width: 992px) {
+  section {
+    padding: 0 15px;
+  }
+  #historia img.spc_img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  section h2 {
+    font-size: var(--font-size-lg);
+  }
+  #valores h3 {
+    font-size: var(--font-size-md);
+  }
+}
+
+/* ==============================
+   ===== RODAPÉ =====
+   ============================== */
+.footer {
+  background-color: var(--color-neutral-900);
+  color: var(--color-neutral-100);
+  padding: var(--space-5) var(--space-3);
+  font-family: var(--font-family-mono);
+}
+
+/* Footer wrapper */
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-5);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer principal */
+.footer-main {
+  flex: 1 1 250px;
+}
+
+.footer .logo {
+  margin-bottom: var(--space-1);
+}
+
+/* Ícones redes sociais */
+.footer .social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+/* Sitemap do footer */
+.footer-sitemap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  flex: 2 1 500px;
+}
+
+.footer-sitemap ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-sitemap strong {
+  color: var(--color-secondary);
+}
+
+/* Botões de link no footer */
+.link-button {
+  background-color: var(--color-secondary);
+  color: var(--color-neutral-900);
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-button:hover {
+  background-color: var(--color-secondary);
+}

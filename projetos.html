@@ -5,45 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Conheça nossos projetos sociais e saiba como se tornar voluntário.">
   <title>ONG Esperança Viva | Projetos</title>
-  <link rel="stylesheet" href="assets/css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/logo.png">
 
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="Logotipo da ONG Esperança Viva" width="120">
-      <h1>ONG Esperança Viva</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html" aria-current="page">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <div class="header-top flex">
+        <img src="assets/img/logo.png" alt="Logotipo da ONG Esperança Viva" class="logo">
+        <h1>ONG Esperança Viva</h1>
+
+        <!-- Barra de pesquisa -->
+        <form class="search-form" action="#" method="get">
+          <input type="text" name="q" placeholder="Pesquisar..." aria-label="Pesquisar">
+          <button type="submit">🔍</button>
+        </form>
+      </div>
+
+      <nav>
+        <ul class="flex--nav">
+          <li><a class="navegadores" href="index.html">Início</a></li>
+          <li><a class="navegadores" href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a class="navegadores" href="cadastro.html">Cadastro</a></li>
+        </ul>
+
+        <!-- Botão hamburguer para mobile -->
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      </nav>
+    </header>
 
   <main>
     <section id="projetos">
       <h2>Projetos Sociais</h2>
 
+      <!-- PROJETO 1 -->
       <article class="projeto">
-        <img src="assets/img/projeto1.jpg" alt="Projeto Educação para Todos" width="480">
+        <img src="assets/img/projeto1.jpg" alt="Projeto Comida para Todos" width="480" class="spc_img">
         <h3>Comida para Todos</h3>
-        <p>Atráves de grupos de doaçoes e postagens na internet, arrecadamos cerca de 350 kg de alimentos por mês.
-        E distribuimos para crianças e adultos em situação de rua.</p>
+        <p class="text-block">
+          Através de grupos de doações e postagens na internet, arrecadamos cerca de 350 kg de alimentos por mês. 
+          Esses alimentos são cuidadosamente selecionados, separados e distribuídos para crianças, adultos e idosos em situação de vulnerabilidade. 
+          Nosso trabalho vai além da entrega física: buscamos orientar as famílias sobre a importância de uma alimentação balanceada, fornecendo dicas de preparo de refeições nutritivas mesmo com recursos limitados.
+        </p>
+        <p class="text-block">
+          Cada entrega envolve voluntários comprometidos que ajudam na organização e logística, criando uma rede de solidariedade que conecta doadores e beneficiados. 
+          Também promovemos eventos comunitários para engajar a população local, incentivar a participação cidadã e sensibilizar para a redução do desperdício de alimentos.
+        </p>
+        <p class="text-block">
+          O projeto contribui para reduzir a insegurança alimentar, garantir acesso a refeições diárias e promover dignidade a quem enfrenta dificuldades. 
+          Ao longo dos anos, conseguimos atingir diversas regiões da cidade, alcançando famílias que, de outra forma, não teriam acesso a alimentos básicos.
+        </p>
+        <p class="text-block">
+          A cada mês, mensuramos nosso impacto através de relatórios detalhados e depoimentos das famílias beneficiadas. 
+          Esse feedback é essencial para aprimorar nossas ações e identificar novas necessidades. 
+          Com o apoio de parceiros, empresas e instituições, o projeto continua crescendo e oferecendo esperança a centenas de pessoas.
+        </p>
       </article>
 
+      <!-- PROJETO 2 -->
       <article class="projeto">
-        <img src="assets/img/projeto2.jpg" alt="Projeto Alimentar com Esperança" width="480">
-        <h3>Cuidados pessoais e saúde</h3>
-        <p>Distribuição semanal de kits de higiene e medicação básica em comunidades carentes.</p>
+        <img src="assets/img/projeto2.jpg" alt="Projeto Cuidados pessoais e saúde" width="480" class="spc_img">
+        <h3>Cuidados Pessoais e Saúde</h3>
+        <p class="text-block">
+          Distribuímos semanalmente kits de higiene pessoal e medicação básica em comunidades carentes, garantindo que as pessoas tenham acesso a cuidados essenciais. 
+          Além disso, o projeto busca prevenir doenças comuns e promover hábitos saudáveis entre crianças, adultos e idosos. 
+          Cada kit contém itens de higiene, sabonetes, escovas e pastas de dente, álcool em gel, máscaras e medicamentos básicos.
+        </p>
+        <p class="text-block">
+          Nossos voluntários trabalham em conjunto com profissionais da saúde para realizar atendimentos preventivos, pequenas consultas e orientações sobre hábitos de higiene. 
+          Também promovemos oficinas educativas sobre cuidados pessoais, prevenção de doenças e primeiros socorros. 
+          Essas ações ajudam a criar consciência sobre a importância da saúde preventiva em comunidades vulneráveis.
+        </p>
+        <p class="text-block">
+          A distribuição dos kits é acompanhada por reuniões comunitárias, onde discutimos melhorias, ouvimos relatos dos beneficiados e registramos as necessidades específicas de cada região. 
+          Com isso, conseguimos direcionar os recursos de forma mais eficiente e garantir que cada ação tenha impacto real e duradouro.
+        </p>
+        <p class="text-block">
+          Ao longo do tempo, o projeto fortaleceu laços entre voluntários, comunidade e parceiros locais, criando uma rede de apoio contínuo. 
+          Também incentivamos a participação de jovens voluntários, promovendo engajamento social desde cedo e fomentando a cultura de solidariedade e cuidado mútuo.
+        </p>
+        <p class="text-block">
+          Cada ação é registrada e monitorada para avaliar o alcance e eficácia, garantindo transparência e responsabilidade. 
+          O projeto “Cuidados Pessoais e Saúde” não apenas entrega itens essenciais, mas transforma vidas ao oferecer educação, suporte e atenção às necessidades básicas da comunidade.
+        </p>
       </article>
     </section>
 
+
+
     <section id="doacoes">
-      \
+      
       
       <h2>Como Ajudar</h2>
       <p>Você pode contribuir com nossas ações por meio de doações financeiras ou materiais.</p>
@@ -58,8 +110,67 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 ONG Esperança Viva. Todos os direitos reservados.</p>
-  </footer>
+    <footer class="footer">
+      <div class="footer-wrapper">
+
+        <!-- LOGO E COPYRIGHT -->
+        <div class="footer-main">
+          <img src="assets/img/logo.png" alt="Logotipo da ONG Esperança Viva" class="logo" width="180">
+          <p class="copyright">
+            © 2025 ONG Esperança Viva — Todos os direitos reservados.
+          </p>
+
+          <!-- REDES SOCIAIS -->
+          <ul class="social-media">
+            <li>Redes sociais:</li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <img src="assets/img/icones/instagram.png" alt="Instagram" width="20">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <img src="assets/img/icones/facebook.png" alt="Facebook" width="20">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <img src="assets/img/icones/whatsapp.png" alt="WhatsApp" width="20">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MAPA DO SITE -->
+        <div class="footer-sitemap">
+          <ul>
+            <li><strong>Institucional</strong></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="#">Transparência</a></li>
+          </ul>
+
+          <ul>
+            <li><strong>Sobre nós</strong></li>
+            <li><a href="#sobre-nos">Nossa missão</a></li>
+            <li><a href="#valores">Valores</a></li>
+            <li><a href="#historia">História</a></li>
+          </ul>
+
+          <ul>
+            <li><strong>Contato</strong></li>
+            <li><a href="#contato">Fale conosco</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <!-- CHAMADA PARA AÇÃO -->
+        <div class="footer-button">
+          <a href="cadastro.html" class="link-button">Seja voluntário</a>
+        </div>
+
+      </div>
+    </footer>
 </body>
 </html>

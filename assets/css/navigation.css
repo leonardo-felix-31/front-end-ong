@@ -1,0 +1,98 @@
+/* ===== NAVBAR ===== */
+.navbar,
+nav {
+  background: var(--color-primary-dark);
+  padding: var(--space-2);
+  position: relative;
+}
+
+/* Lista de links */
+nav ul.flex--nav,
+.navbar ul {
+  display: flex;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.flex--nav li,
+.navbar li {
+  position: relative;
+}
+
+/* Links padrão */
+nav ul.flex--nav li a,
+.navbar li a {
+  color: var(--color-neutral-100); /* branco padrão */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Página ativa */
+nav ul.flex--nav li a[aria-current="page"],
+.navbar li a[aria-current="page"] {
+  color: var(--color-secondary); /* amarelo */
+}
+
+/* Hover das outras páginas */
+nav ul.flex--nav li a:hover,
+.navbar li a:hover {
+  color: var(--color-secondary-dark); /* amarelo escuro */
+}
+
+/* Submenu */
+nav ul.flex--nav li ul,
+.navbar li ul {
+  display: none;
+  position: absolute;
+  background: var(--color-neutral-100);
+  padding: var(--space-2);
+  border-radius: 4px;
+}
+
+nav ul.flex--nav li:hover ul,
+.navbar li:hover ul {
+  display: block;
+}
+
+/* Botão hamburger */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--color-neutral-100);
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  nav ul.flex--nav,
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color-primary-dark);
+  }
+
+  nav ul.flex--nav.active,
+  .navbar ul.active {
+    display: flex;
+  }
+
+  nav ul.flex--nav li,
+  .navbar li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

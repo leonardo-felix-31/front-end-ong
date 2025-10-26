@@ -1,77 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ONG Esperança Viva - Transformando vidas por meio de projetos sociais e voluntariado.">
-  <meta name="keywords" content="ONG, voluntariado, doação, projetos sociais">
-  <meta name="author" content="Leonardo Felix">
-  <title>ONG Esperança Viva | Início</title>
-  <link rel="stylesheet" href="assets/css">
-  <link rel="icon" href="assets/img/logo.png">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ONG Esperança Viva - Transformando vidas por meio de projetos sociais e voluntariado.">
+    <meta name="keywords" content="ONG, voluntariado, doação, projetos sociais">
+    <meta name="author" content="Leonardo Felix">
+    <title>ONG Esperança Viva | Início</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    >
+  </head>
 
-<body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="Logotipo da ONG Esperança Viva" width="120">
-      <h1>ONG Esperança Viva</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html" aria-current="page">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <div class="header-top flex">
+        <img src="assets/img/logo.png" alt="Logotipo da ONG Esperança Viva" width="120">
+        <h1>ONG Esperança Viva</h1>
 
-  <main>
-    <section id="sobre">
-      <h2>Sobre Nós</h2>
-      <p>Somos uma organização sem fins lucrativos dedicada a erradicar a fome e fornecer suprimentos básico a pessoas necessitadas.</p>
-    </section>
+        <!-- Barra de pesquisa -->
+        <form class="search-form" action="#" method="get">
+          <input type="text" name="q" placeholder="Pesquisar..." aria-label="Pesquisar">
+          <button type="submit">🔍</button>
+        </form>
+      </div>
 
-    <section id="valores">
-      <h2>Missão, Visão e Valores</h2>
-      <article>
-        <h3>Missão</h3>
-        <p>Transformar vidas através da solidariedade e do engajamento social.</p>
-      </article>
-      <article>
-        <h3>Visão</h3>
-        <p>Ser referência em impacto social no Brasil até 2030.</p>
-      </article>
-      <article>
-        <h3>Valores</h3>
-        <ul>
-          <li>Transparência</li>
-          <li>Empatia</li>
-          <li>Comprometimento</li>
+      <nav>
+        <ul class="flex--nav">
+          <li><a class="navegadores" href="index.html" aria-current="page">Início</a></li>
+          <li><a class="navegadores" href="projetos.html">Projetos</a></li>
+          <li><a class="navegadores" href="cadastro.html">Cadastro</a></li>
         </ul>
-      </article>
-    </section>
 
-    <section id="historia">
-      <h2>Nossa História</h2>
-      <img src="assets/img/equipe.png" alt="Equipe de voluntários da ONG Esperança Viva">
-      <p>Desde 2015, atuamos em comunidades carentes, desenvolvendo projetos voltados à educação, saúde e sustentabilidade.</p>
-    </section>
+        <!-- Botão hamburguer para mobile -->
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      </nav>
+    </header>
 
-    <section id="contato">
-      <h2>Entre em Contato</h2>
-      <p>Email: contato@esperancaviva.org.br</p>
-      <p>Telefone: (11) 99999-9999</p>
-      <p>Endereço: Rua da Solidariedade, 123 - São Paulo/SP</p>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 ONG Esperança Viva. Todos os direitos reservados.</p>
-    <div class="redes">
-      <a href="#"><img src="assets/img/icones/whatsapp.png" alt="whatsapp" width="120"></a>
-      <a href="#"><img src="assets/img/icones/intagram.png" alt="instagram" width="120"></a>
-    </div>
-  </footer>
-</body>
+
+
+    <main>
+      <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p class="text-block">
+          Somos uma organização sem fins lucrativos dedicada a erradicar a fome e
+          fornecer suprimentos básicos a pessoas necessitadas.
+          Fundada em 2010, nossa missão é garantir que cada indivíduo tenha acesso a alimentos nutritivos,
+          água potável e itens essenciais para viver com dignidade.
+        </p>
+        <p class="text-block">
+          Trabalhamos em comunidades locais e internacionais, promovendo programas de distribuição de alimentos,
+          educação nutricional e apoio emergencial em situações de crise.
+          Nosso objetivo é criar um impacto sustentável,
+          ajudando famílias a superar a insegurança alimentar e construir um futuro mais seguro.
+        </p>
+        <p class="text-block">
+          Acreditamos na transparência, no trabalho colaborativo e na solidariedade. Com o apoio de voluntários,
+          parceiros e doadores, conseguimos levar esperança e recursos para quem mais precisa.
+          Junte-se a nós nessa missão e faça parte da mudança positiva na vida de milhares de pessoas.
+        </p>
+      </section>
+
+      <section id="valores">
+        <h2>Missão, Visão e Valores</h2>
+
+        <article class="text-block">
+          <h3>Missão</h3>
+          <p>
+            Transformar vidas através da solidariedade e do engajamento social. 
+            Buscamos fornecer recursos essenciais, promover educação e gerar oportunidades
+            para comunidades em situação de vulnerabilidade, garantindo que cada pessoa tenha
+            a chance de viver com dignidade e esperança.
+          </p>
+          <p>
+            Nossas ações incluem distribuição de alimentos, apoio educacional, programas de saúde e
+            iniciativas de capacitação profissional, sempre envolvendo voluntários e parceiros locais
+            para fortalecer o impacto de nossas atividades.
+          </p>
+        </article>
+
+        <article class="text-block">
+          <h3>Visão</h3>
+          <p>
+            Ser referência em impacto social no Brasil até 2030, criando uma rede sustentável de apoio
+            que inspire outras organizações e indivíduos a se engajarem na construção de uma sociedade mais justa e solidária.
+          </p>
+          <p>
+            Almejamos expandir nossas iniciativas para alcançar mais comunidades, mensurar resultados de forma transparente e
+            promover soluções inovadoras que possam ser replicadas em diferentes regiões do país.
+          </p>
+        </article>
+
+        <article class="text-block">
+          <h3>Valores</h3>
+          <ul class="text-block">
+            <li>Transparência – Garantir clareza em todas as ações e na gestão de recursos.</li>
+            <li>Empatia – Compreender e se importar genuinamente com as necessidades das pessoas.</li>
+            <li>Comprometimento – Cumprir promessas e manter consistência em nossos programas.</li>
+            <li>Solidariedade – Agir de forma colaborativa e generosa, ajudando quem precisa.</li>
+            <li>Inovação – Buscar soluções criativas e eficientes para problemas sociais complexos.</li>
+            <li>Respeito – Valorizar a diversidade e tratar todas as pessoas com dignidade.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="historia">
+        <h2>Nossa História</h2>
+        <img src="assets/img/equipe.png" alt="Equipe de voluntários da ONG Esperança Viva" width="1200" class="spc_img">
+
+        <p class="text-block">
+          Desde 2015, atuamos em comunidades carentes, desenvolvendo projetos voltados à educação, saúde e sustentabilidade. 
+          Nossa trajetória começou com um pequeno grupo de voluntários que acreditavam que pequenas ações solidárias 
+          poderiam gerar grandes transformações sociais.
+        </p>
+
+        <p class="text-block">
+          Ao longo dos anos, crescemos e estruturamos nossas iniciativas, formando parcerias com empresas, escolas e órgãos públicos 
+          para ampliar nosso alcance. Hoje, contamos com centenas de voluntários ativos e projetos em diversas regiões do Brasil, 
+          sempre com o propósito de oferecer apoio imediato e criar oportunidades de desenvolvimento a longo prazo.
+        </p>
+
+        <p class="text-block">
+          Entre nossas conquistas, destacam-se programas de alfabetização para jovens e adultos, mutirões de saúde preventiva, 
+          oficinas de capacitação profissional e campanhas permanentes de arrecadação de alimentos e roupas. 
+          Cada projeto é pensado para atender às necessidades específicas de cada comunidade, respeitando sua cultura e promovendo 
+          a autonomia dos beneficiados.
+        </p>
+
+        <p class="text-block"
+        >
+          O nome <strong>Esperança Viva</strong> representa o espírito que nos move: levar esperança a quem mais precisa 
+          e manter viva a crença de que juntos podemos construir um futuro mais solidário e humano.
+        </p>
+      </section>
+
+
+      <section id="contato">
+        <h2>Entre em Contato</h2>
+        
+        <p class="intro">
+          Tem dúvidas ou deseja se envolver com nossas ações? Entre em contato conosco pelos canais abaixo. Estamos prontos para ouvir você!
+        </p>
+
+        <div class="contato-wrapper">
+          <div class="contato-item">
+            <h3>Email</h3>
+            <p><a href="mailto:contato@esperancaviva.org.br">contato@esperancaviva.org.br</a></p>
+          </div>
+
+          <div class="contato-item">
+            <h3>Telefone</h3>
+            <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+          </div>
+
+          <div class="contato-item">
+            <h3>Endereço</h3>
+            <p>Rua da Solidariedade, 123<br>São Paulo/SP</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+
+        <!-- LOGO E COPYRIGHT -->
+        <div class="footer-main">
+          <img src="assets/img/logo.png" alt="Logotipo da ONG Esperança Viva" class="logo" width="180">
+          <p class="copyright">
+            © 2025 ONG Esperança Viva — Todos os direitos reservados.
+          </p>
+
+          <!-- REDES SOCIAIS -->
+          <ul class="social-media">
+            <li>Redes sociais:</li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                <img src="assets/img/icones/instagram.png" alt="Instagram" width="20">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                <img src="assets/img/icones/facebook.png" alt="Facebook" width="30">
+              </a>
+            </li>
+            <li>
+              <a href="https://web.whatsapp.com/" target="_blank" rel="noopener">
+                <img src="assets/img/icones/whatsapp.png" alt="WhatsApp" width="20">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MAPA DO SITE -->
+        <div class="footer-sitemap">
+          <ul>
+            <li><strong>Institucional</strong></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="#">Transparência</a></li>
+          </ul>
+
+          <ul>
+            <li><strong>Sobre nós</strong></li>
+            <li><a href="#sobre-nos">Nossa missão</a></li>
+            <li><a href="#valores">Valores</a></li>
+            <li><a href="#historia">História</a></li>
+          </ul>
+
+          <ul>
+            <li><strong>Contato</strong></li>
+            <li><a href="#contato">Fale conosco</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <!-- CHAMADA PARA AÇÃO -->
+        <div class="footer-button">
+          <a href="cadastro.html" class="link-button">Seja voluntário</a>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
 </html>

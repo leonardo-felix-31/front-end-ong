@@ -479,3 +479,32 @@ form select:focus {
     font-size: var(--font-size-lg);
   }
 }
+
+
+/*  JS   */
+
+
+.flex--nav {
+  display: none;
+}
+.flex--nav.ativo {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.dark-mode {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+.dark-mode a {
+  color: #f0c040;
+}
+
+
+.destacado {
+  outline: 3px solid #f0c040;
+  background-color: rgba(240,192,64,0.1);
+  transition: background-color 0.6s ease;
+}
